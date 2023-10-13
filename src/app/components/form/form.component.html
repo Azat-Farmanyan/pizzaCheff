@@ -4,12 +4,9 @@
       <div class="text-block">
         <h2 class="medium-title">
           Хватит думать!<br />
-          <span
-            style="color: #b99150; display: inline-block; padding-top: 10px"
-          >
+          <span style="color: #b99150; display: inline-block; padding-top: 10px">
             Доставим заказ за 30 <br />
-            минут</span
-          >
+            минут</span>
         </h2>
         <p class="form-description">
           Мы гарантированно доставим вашу пиццу за 30 минут с момента оформления
@@ -22,23 +19,14 @@
 
       <form class="input-block" [formGroup]="orderForm" (ngSubmit)="submit()">
         <div class="input">
-          <input
-            formControlName="name"
-            type="text"
-            placeholder="Ваше имя"
-            (keydown)="onKeyDown($event)"
-          />
+          <input formControlName="name" type="text" placeholder="Ваше имя" (keydown)="onKeyDown($event)" />
           <label class="error-block" *ngIf="nameHasError">
             <small>Пожалуйста, заполните это поле.</small>
           </label>
         </div>
 
         <div class="input">
-          <input
-            formControlName="address"
-            type="text"
-            placeholder="Адрес доставки"
-          />
+          <input formControlName="address" type="text" placeholder="Адрес доставки" />
           <label class="error-block" *ngIf="addressHasError">
             <small>Пожалуйста, заполните это поле.</small>
           </label>
@@ -54,8 +42,8 @@
         <button type="submit" class="btn submit-btn">Оформить заказ</button>
       </form>
 
-      <img class="pizza-image" src="../../../assets/pizzzzza.png" alt="" />
     </div>
+    <img class="pizza-image" src="../../../assets/pizzzzza.png" alt="" />
   </div>
 </section>
 <app-success-submit *ngIf="showSuccess"></app-success-submit>
