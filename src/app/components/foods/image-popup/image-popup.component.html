@@ -1,0 +1,9 @@
+<div class="image-block" *ngIf="open">
+  <img class="image" [src]="image" alt="" />
+  <img
+    (click)="onCLose.emit()"
+    class="close-btn"
+    src="../../../../assets/close.png"
+    alt="close"
+  />
+</div>

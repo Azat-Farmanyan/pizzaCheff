@@ -1,0 +1,45 @@
+.form-block {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 110px;
+  .form-body {
+    display: flex;
+    // flex-wrap: wrap;
+    // justify-content: flex-start;
+    gap: 128px;
+    .text-block {
+      max-width: 400px;
+      width: 100%;
+      .form-description {
+        font-size: 16px;
+        line-height: 24px;
+        color: #b99150;
+        margin-top: 70px;
+      }
+    }
+    .input-block {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      max-width: 330px;
+      width: 100%;
+      .input {
+        position: relative;
+        .error-block {
+          position: absolute;
+          left: 15px;
+          bottom: -15px;
+          color: red;
+        }
+      }
+      .submit-btn {
+        height: 60px;
+      }
+    }
+    .pizza-image {
+      position: absolute;
+      right: -80px;
+      top: -10px;
+    }
+  }
+}

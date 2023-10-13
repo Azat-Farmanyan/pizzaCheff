@@ -1,0 +1,25 @@
+<section class="welcome">
+  <div class="wrapper">
+    <div class="welcome-body">
+      <div class="welcome-leftSide">
+        <div class="title-block">
+          <h1 class="big-title">
+            Cамая вкусная пицца в мире <br />
+            <span style="color: #ffaf18">только в Pizza Cheff</span>
+          </h1>
+        </div>
+
+        <div class="characteristic">
+          <app-characteristic-item
+            *ngFor="let characteristic of characteristics"
+            [item]="characteristic"
+          ></app-characteristic-item>
+        </div>
+        <button class="btn">Выбрать пиццу</button>
+      </div>
+      <div class="welcome-rightside">
+        <img src="../../../assets/pizza_big.png" alt="pizza_big" />
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,1 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("./null.scss");
+@import url("https://fonts.cdnfonts.com/css/muller-narrow?styles=45074,45075,45071,45072,45070,45073,45068,45069,45067");
+
+body {
+  font-family: "Muller", sans-serif;
+}
+
+.wrapper {
+  max-width: 1230px;
+  padding: 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+.big-title {
+  font-size: 45px;
+  line-height: 55px;
+  color: #b99150;
+  font-weight: 800;
+}
+.btn {
+  font-size: 16px;
+  color: #382400;
+  font-weight: bold;
+  padding: 20px 50px;
+  background-color: #ffaf18;
+}
+.medium-title {
+  font-size: 35px;
+  color: #ffaf18;
+  font-weight: 800;
+}
+
+input {
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  border: 1px solid #b99150;
+  padding: 20px;
+
+  font-size: 18px;
+  color: #cba86e;
+}
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #cba86e;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #cba86e;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #cba86e;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #cba86e;
+}

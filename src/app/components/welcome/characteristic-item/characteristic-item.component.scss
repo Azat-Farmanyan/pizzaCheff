@@ -1,0 +1,23 @@
+.characteristic-card {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  .righside {
+    .char-title {
+      font-size: 16px;
+      letter-spacing: 0px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #ffaf18;
+      font-weight: 800;
+    }
+    .char-description {
+      font-size: 16px;
+      letter-spacing: 0px;
+      line-height: 16px;
+      color: #b99150;
+    }
+  }
+}

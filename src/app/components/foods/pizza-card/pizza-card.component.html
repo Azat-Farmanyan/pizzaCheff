@@ -1,0 +1,12 @@
+<div class="card" (click)="open()">
+  <img class="card-img" [src]="item.image" [alt]="item.title" />
+  <h3 class="card-title">{{ item.title }}</h3>
+  <p class="card-description">{{ item.description }}</p>
+  <button class="btn">В корзину</button>
+</div>
+
+<app-image-popup
+  [image]="item.image"
+  [open]="isOpen"
+  (onCLose)="close()"
+></app-image-popup>

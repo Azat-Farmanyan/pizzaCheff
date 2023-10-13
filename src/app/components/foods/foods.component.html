@@ -1,0 +1,13 @@
+<section class="foods">
+  <div class="wrapper">
+    <div class="foods-block">
+      <h2 class="food-block-title">Выберите свою любимую пиццу</h2>
+      <div class="pizza-block">
+        <app-pizza-card
+          *ngFor="let pizza of menu"
+          [item]="pizza"
+        ></app-pizza-card>
+      </div>
+    </div>
+  </div>
+</section>
